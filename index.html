@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AURA — Premium SMM Agency</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --black:#0e0e0f;
+    --dark:#1a1a1d;
+    --gray:#2b2b31;
+    --red:#7a0f14;
+    --red-bright:#b11217;
+    --text:#f2f2f2;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:var(--black);
+    color:var(--text);
+    overflow-x:hidden;
+}
+
+section{
+    min-height:100vh;
+    padding:100px 12%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    opacity:0;
+    transform:translateY(60px);
+    transition:1s ease;
+}
+
+section.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+h1{
+    font-size:64px;
+    font-weight:800;
+    letter-spacing:6px;
+}
+
+h2{
+    font-size:42px;
+    margin-bottom:40px;
+    font-weight:700;
+    position:relative;
+}
+
+h2::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-12px;
+    width:100px;
+    height:4px;
+    background:var(--red);
+}
+
+p{
+    font-size:18px;
+    line-height:1.9;
+    max-width:1000px;
+}
+
+.hero span{
+    color:var(--red-bright);
+}
+
+.packages{
+    display:flex;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.card{
+    flex:1;
+    min-width:320px;
+    background:var(--dark);
+    padding:45px;
+    border-radius:14px;
+    border:1px solid var(--gray);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+    border:1px solid var(--red-bright);
+    box-shadow:0 0 30px rgba(177,18,23,.4);
+}
+
+.card h3{
+    font-size:26px;
+    margin-bottom:10px;
+}
+
+.price{
+    font-size:30px;
+    color:var(--red-bright);
+    margin-bottom:25px;
+}
+
+ul{
+    list-style:none;
+}
+
+ul li{
+    margin-bottom:12px;
+    font-size:16px;
+    opacity:.9;
+}
+
+.team-box{
+    background:var(--dark);
+    padding:40px;
+    border-radius:12px;
+    border:1px solid var(--gray);
+    margin-top:30px;
+}
+
+footer{
+    background:var(--dark);
+    padding:60px 12%;
+    text-align:center;
+}
+
+button{
+    margin-top:40px;
+    padding:16px 45px;
+    background:var(--red);
+    border:none;
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:var(--red-bright);
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+<h1>AURA <span>AGENCY</span></h1>
+<p>
+Премиальное SMM-агентство полного цикла.  
+Мы формируем стратегию присутствия бренда в digital-пространстве, создаем визуальный код компании  
+и обеспечиваем системный рост охватов, вовлеченности и продаж.
+</p>
+</section>
+
+<section>
+<h2>О компании</h2>
+<p>
+Aura — команда профильных специалистов, объединённых общей целью:  
+построение сильной цифровой репутации бренда и масштабирование его присутствия на рынке.
+
+Работа строится на аналитике, стратегическом планировании и комплексной реализации.
+Каждый проект ведется по официальному договору с фиксированными обязательствами сторон.
+</p>
+</section>
+
+<section>
+<h2>Состав проектной команды</h2>
+
+<div class="team-box">
+<p>
+В рамках сотрудничества над проектом работает полноценная профессиональная команда:
+
+<br><br>— Профессиональный SMM-специалист  
+<br>— Маркетолог-стратег  
+<br>— Таргетолог  
+<br>— Графический дизайнер  
+<br>— Motion-дизайнер  
+<br>— Видеограф  
+<br>— Мобилограф  
+<br><br>
+
+В зависимости от выбранного пакета в проекте задействовано от 4 до 7 специалистов.
+Стоимость пакета включает оплату работы всей команды.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Подход к работе</h2>
+<p>
+— Анализ ниши и конкурентов  
+<br>— Формирование стратегии позиционирования  
+<br>— Разработка визуальной айдентики  
+<br>— Создание продающего контента  
+<br>— Настройка и ведение таргетированной рекламы  
+<br>— Ежемесячная аналитика и корректировка стратегии  
+</p>
+</section>
+
+<section>
+<h2>Пакеты услуг</h2>
+
+<div class="packages">
+
+<div class="card">
+<h3>STANDARD</h3>
+<div class="price">$1500 / месяц</div>
+<ul>
+<li>12 постов (дизайн + копирайтинг)</li>
+<li>20 Stories</li>
+<li>Контент-план</li>
+<li>Настройка и ведение таргета</li>
+<li>Базовая аналитика</li>
+<li>Команда из 4 специалистов</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>BUSINESS</h3>
+<div class="price">$2000 / месяц</div>
+<ul>
+<li>15 постов</li>
+<li>30 Stories</li>
+<li>2 Reels</li>
+<li>Ведение таргетированной рекламы</li>
+<li>Расширенная аналитика</li>
+<li>Команда из 6 специалистов</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>PREMIUM</h3>
+<div class="price">$2500 / месяц</div>
+<ul>
+<li>20 High-End постов</li>
+<li>40 Stories</li>
+<li>4 Reels</li>
+<li>Полная SMM-стратегия</li>
+<li>Полное ведение таргета</li>
+<li>Глубокая аналитика и масштабирование</li>
+<li>Команда из 7 специалистов</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>Условия сотрудничества</h2>
+<p>
+Работа осуществляется на основании официального договора.  
+В договоре фиксируются объём услуг, сроки реализации, KPI и формат отчетности.
+
+Коммуникация ведется через согласованный канал связи.  
+Стратегическая сессия проводится ежемесячно.
+</p>
+</section>
+
+<section>
+<h2>Контактная информация</h2>
+<p>
+AURA Agency  
+<br>Telegram: @aura_team  
+<br>Email: info@aura-agency.com  
+<br>Телефон: +998 90 000 00 00  
+</p>
+</section>
+
+<footer>
+© 2026 AURA — Premium Digital Authority
+</footer>
+
+<script>
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+    sections.forEach(sec => {
+        const top = window.scrollY;
+        const offset = sec.offsetTop - 400;
+        const height = sec.offsetHeight;
+        if(top >= offset && top < offset + height){
+            sec.classList.add("active");
+        }
+    });
+});
+</script>
+
+</body>
+</html>
